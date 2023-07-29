@@ -1,0 +1,196 @@
+body {
+  background-color: bisque;
+  font-family: "Handjet", cursive;
+  font-weight: 700;
+  overflow-x: hidden;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+li::before {
+  content: "\25A0"; /* Код символу квадратика (U+25A0) */
+  margin-right: 10px; /* Відступ між квадратиком і текстом, можна змінити за бажанням */
+}
+.custom-li {
+  font-family: "Handjet", cursive;
+  font-weight: bold;
+}
+.add-button {
+  font-family: "Handjet", cursive;
+}
+.clear-button {
+  font-family: "Handjet", cursive;
+  margin-left: 8px;
+}
+.task-item {
+  font-family: "Handjet", cursive;
+}
+.crossed-out {
+  text-decoration: line-through;
+}
+
+.task-item:focus {
+  outline: none;
+  border: none;
+}
+.container-task-item {
+  display: flex;
+  justify-content: center;
+}
+.container-task-list {
+  padding-top: 0.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+@media (max-width: 768px) {
+  .title {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 60px;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .notebook-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    word-break: break-word;
+    overflow-y: auto;
+    line-height: 1;
+  }
+  /* Решта стилів без змін */
+  .add-button {
+    font-size: 20px;
+    border: none;
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: rgb(204, 184, 154);
+  }
+  .clear-button {
+    font-size: 20px;
+    border: none;
+    height: 30px;
+    width: 50px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: rgb(204, 184, 154);
+  }
+  .task-item {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+  }
+  .custom-li {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 80px;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .notebook-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    word-break: break-word;
+    overflow-y: auto;
+    line-height: 1;
+  }
+  /* Решта стилів без змін */
+  .add-button {
+    font-size: 25px;
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(204, 184, 154);
+  }
+  .clear-button {
+    font-size: 25px;
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(204, 184, 154);
+  }
+  .task-item {
+    border: none;
+    background-color: transparent;
+    font-size: 35px;
+  }
+  .custom-li {
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
+@media (min-width: 1025px) {
+  .title {
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 90px;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .notebook-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    word-break: break-word;
+    overflow-y: auto;
+    line-height: 1;
+  }
+  /* Решта стилів без змін */
+  .add-button {
+    font-size: 25px;
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(204, 184, 154);
+  }
+  .clear-button {
+    font-size: 25px;
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(204, 184, 154);
+  }
+  .task-item {
+    border: none;
+    background-color: transparent;
+    font-size: 35px;
+  }
+  .custom-li {
+    font-size: 35px;
+    cursor: pointer;
+  }
+}
